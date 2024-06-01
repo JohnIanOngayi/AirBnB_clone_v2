@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-
 """
 Script Starts A Flask Application
 """
 
-from flask import Flask, app
+from flask import Flask
 
 app = Flask(__name__)
 
