@@ -2,3 +2,6 @@ venv
 file.json
 .env
 .gitignore
+.python-version
+./models/engine/db_storage_backup.py
+main.py
