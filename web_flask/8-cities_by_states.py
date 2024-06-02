@@ -6,16 +6,15 @@ Script that populates the States and related Cities tab
 from flask import Flask, render_template
 from models import storage
 from models.state import State
-from os import getenv
 
 app = Flask(__name__)
 
 
-@app.route("/cities_by_state", strict_slashes=False)
-def render_state():
+@app.route("/cities_by_states", strict_slashes=False)
+def render_cities_by_state():
     """Renders the states tab"""
     states_dicts = storage.all(State).values()
-    return render_template('7-states_list.html', states=states_dicts)
+    return render_template('8-cities_by_states.html', states=states_dicts)
 
 
 @app.teardown_appcontext
