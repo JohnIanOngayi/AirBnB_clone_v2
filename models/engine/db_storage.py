@@ -91,3 +91,7 @@ class DBStorage:
                 expire_on_commit=False
             )
         )
+
+    def close(self):
+        """Calls remove method on private session attribute"""
+        self.__session.remove()
